@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+:root {
+    --violet: #2d70ff;
+}
+
+body {
+    margin:0;
+    color: white;
+}
+
+header {
+    background: linear-gradient(#13181d, #20282e, #1e1b47 );
+}
+
+header nav {
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap; /* Passer à la ligne si plus de place */
+    justify-content: space-between; /* Espacez les items */
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 20px; /* Texte en maj */
+    color: var(--violet);
+
+}
+
+header nav .left {
+    display: flex;
+    align-items: center
+
+}
+
+header nav .left p {
+    margin: 0 0 0 20px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+header nav .left p:hover {
+    color: white;
+}
+
+header nav .left button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+header nav .left button:hover {
+    color: white;
+    background-color: var(--violet);
+}
+header nav .left button:active {
+    transform: scale(.9);
+    transition: transform .1s;
+}
+
+header .quest {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 100vh;
+    color: #dfe4ea;
+}
+
+header .choices {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem auto 3rem;
+    width: 500px;
+}
+
+header .choices button {
+    flex: 1 0 45%;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:  3px solid var(--violet);
+    margin: .4rem;
+    outline: none;
+    background: var(--violet);
+    color: white;
+    user-select: none;
+    font-weight: 600;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+header .choices button:hover {
+    color: var(--violet);
+    background: inherit;
+}
+
+header .choices button:active {
+    transform: scale(.9);
+    transition: transform .1s;
+}
+
+header .quest p, header .quest .choices p {
+    font-size: 1.3rem;
+}
+header .quest h1 {
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-size: 3rem;
+
+}
+
+header .quest h3 {
+    font-size: 1.5rem;
+    color: var(--violet);
+
+}
+footer {
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--violet);
+}
+footer p {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white;
+}

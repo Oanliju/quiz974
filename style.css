@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --violet: #2d70ff;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+    color: white;
+}
+
+header {
+    background: linear-gradient(#13181d, #20282e, #1e1b47 );
+}
+
+header nav {
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap; /* Passer à la ligne si plus de place */
+    justify-content: space-between; /* Espacez les items */
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px; /* Texte en maj */
+    color: var(--violet);
+
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p {
+    margin: 0 20px 0 0;
+    color: #ccc;
+}
+
+header nav .right p:hover {
+    color: white;
+}
+
+header nav .right button {
+    padding: 5px 15px;
+    font-size: 16px;
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+header nav .right button:hover {
+    color: white;
+    background-color: var(--violet);
+}
+
+.presentation {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation .quiz {
+    width: 100%;
+    flex-shrink: 3;
+}
+
+.presentation .quiz h1 {
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+
+.presentation .quiz p {
+    font-weight: 300;
+    color: #dadada;
+}
+
+.presentation .quiz button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.presentation .image-presentation img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.first .quiz button {
+    background-color: var(--violet);
+    border: 2px solid var(--violet);
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+.first .quiz button:hover {
+    background-color: inherit;
+    border: 2px solid var(--violet);
+    color: var(--violet);
+}
+
+.second {
+    margin: 0;
+    background-color: #13181d;
+}
+
+.second .quiz .new {
+    color: var(--violet);
+}
+
+.second .quiz button{
+    background-color: inherit;
+    border: 1px solid var(--violet);
+    color: var(--violet);
+    transition: color 0.2s, background-color 0.5s;
+}
+
+.second .quiz button:hover {
+    background-color: var(--violet);
+    color: white;
+}
+
+footer {
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--violet);
+}
+footer p {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white;
+}
+
+@media screen and (max-width: 640px) {
+    header nav .right p {
+        display: none;
+    }
+
+    .presentation .quiz h1 {
+        font-size: 2em;
+    }
+    .presentation .image-presentation img {
+        display: none;
+    }
+    footer {
+        justify-content: flex-start;
+
+    }
+    footer .column {
+        width: 80%;
+    }
+}
