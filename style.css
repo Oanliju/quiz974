@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+:root {
+    --color: #2d70ff;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    margin:0;
+    color: white;
+}
+
+header {
+    background: linear-gradient(#13181d, #1e1b47 );
+}
+
+header nav {
+    padding: 30px 5% 0 5%;
+    display: flex;
+    flex-wrap: wrap; /* Passer à la ligne si plus de place */
+    justify-content: space-between; /* Espacez les items */
+    align-items: center;
+}
+
+header nav h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px; /* Texte en maj */
+    color: var(--color);
+
+}
+
+header nav .right {
+    display: flex;
+    align-items: center;
+}
+
+header nav .right p {
+    margin: 0 20px 0 0;
+    color: #ccc;
+}
+
+header nav .right p:hover {
+    color: white;
+}
+
+.presentation {
+    padding: 30px 5%;
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.presentation .quiz {
+    width: 100%;
+    flex-shrink: 3;
+}
+
+.presentation .quiz h1 {
+    margin: 0;
+    font-size: 4vw;
+    width: 80%;
+}
+
+.presentation .quiz p {
+    font-weight: 300;
+    color: #dadada;
+}
+
+.presentation .quiz button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    font-size:15px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--color);
+    border: 2px solid var(--color);
+    color:white;
+    transition: color 0.2s, background-color 0.5s;
+}
+
+.presentation .image-presentation img {
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+}
+
+.presentation .quiz button:hover {
+    background-color: inherit;
+    border: 2px solid var(--color);
+    color: var(--color);
+}
+footer {
+    margin:0;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+footer h3 {
+    color: var(--color);
+}
+footer p {
+    color: #ccc;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+footer p:hover {
+    color: white;
+}
+
