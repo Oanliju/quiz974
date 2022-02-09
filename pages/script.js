@@ -81,7 +81,7 @@ class Question { //creation d'une class Question pour pouvoir creation simplemen
     progress: function() {// la progression
       let currentQuestionNumber = quiz.currentQuestionIndex + 1;
       //on ajoute 1 car dans le code le premier élément commence par 0
-      this.elementShown("progress", "Question" + currentQuestionNumber + " sur " + quiz.questions.length);
+      this.elementShown("progress", "Question " + currentQuestionNumber + " sur " + quiz.questions.length);
     },
   };
   
